@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maow's POS: Order Viewer</title>
+</head>
+
+<body>
+
+    <h1>Orders</h1>
+
+    {% for order in orders %}
+        <div>
+            <h2>{{ order.name }}</h2>
+
+            <pre>{{ order.contents }}</pre>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
